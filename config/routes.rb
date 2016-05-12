@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  devise_for :users
 #root for Pages
-root 'pages#index'
+  root 'pages#index'
 # routes for pages
   get '/home' => 'pages#home' #overwite default url
   get '/profile' => 'pages#profile'
